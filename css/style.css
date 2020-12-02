@@ -6,6 +6,7 @@ body {
     font-weight: 300;
     letter-spacing: 0.5px;
     overflow-x: hidden;
+    
 }
 ol, ul {
 	list-style: none;
@@ -82,11 +83,24 @@ HEADER
 ************************************
 ***********************************/
 .header{
-    background: url('../img/bg-banner02.jpg') no-repeat fixed;
-    background-size: cover;
-    min-height: 650px;
-    position: relative;
+
+
+    background-image: url('../img/bg-banner02.jpg');
+    background-repeat:no-repeat;
+
+
+    width: 100%;
+    height: auto;
+
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+
+    background-position:  center center;
+    background-size: 80%;
+    
+   
 }
+
 .bg-color
 {
     background-color: rgba(0, 0, 0, 0.5);
@@ -94,12 +108,22 @@ HEADER
 }
 #main-header
 {
+    background-image: url('http://ppc-genius.com/wp-content/uploads/2015/11/EventLander.png');
+    background-repeat:no-repeat;
+    height:541px;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
 }
 .navbar-default {
-    background-color: transparent;
+    background-color: rgba(64,75,97, 0.9);
     border:0px;
     padding: 20px 0; 
     transition: all 0.3s;
+    text-align: center;
 }
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover
@@ -623,6 +647,16 @@ contact
 {
     color: #be9e21;
 }
+.bio-icono{
+    margin-left: 4px; 
+}
+.loction-info p i a
+{
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
 /***********************************
 ************************************
 contact
@@ -696,6 +730,7 @@ Responsive media queries
 @media (min-width: 768px) and (max-width: 980px) {
     .service-item, .blog-sec, .wrap-item, .loction-info{
     margin-bottom: 15px;
+    
 }
 .portfolio-item figure figcaption{
     padding: 55px 30px;
@@ -703,13 +738,22 @@ Responsive media queries
 .padding-right-zero{
     padding-right: 15px !important;
 }
+.header{
+    background-size: 90%;
+}
 }
 @media (min-width: 451px) and (max-width: 767px) {
     .service-item, .blog-sec, .wrap-item, .loction-info{
     margin-bottom: 15px;
 }
+.header{
+    background-size: 160%;
+}
 }
 @media (min-width: 20px) and (max-width: 450px) {
+.header{
+    background-size: 100%;
+}
 .navbar-default .navbar-brand {
     padding-left: 16px;
     margin-top: 0px;
