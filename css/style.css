@@ -741,6 +741,7 @@ Responsive media queries
 .header{
     background-size: 90%;
 }
+
 }
 @media (min-width: 451px) and (max-width: 767px) {
     .service-item, .blog-sec, .wrap-item, .loction-info{
@@ -810,5 +811,9 @@ body{
 .navbar-default .navbar-nav > li > a{
     line-height: 22px;
     text-align: center;
+}
+h2.bnr-sub-title {
+    font-size: 23px;
+    margin-top: 50px;
 }
 }
